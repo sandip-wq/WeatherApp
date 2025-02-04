@@ -7,11 +7,21 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <form class="weatherForm">
+    <input type="text" class="cityInput" placeholder="Search City" spellcheck="false">
+    <button type="submit">Get Weather</button>
+  </form>
+
   <div class="card">
-    <div class="search">
-        <input type="text" placeholder="Search City" spellcheck="false">
-        <button><img src="images/search.png"></button>
-    </div>
-  </div>  
+    <h1 class="cityDisplay">City Name</h1>
+    <p class="tempDisplay">90F</p>
+    <p class="humidityDisplay">Humidity: 75%</p>
+    <p class="descDisplay">Clear Skies</p>
+    <p class="weatherEmoji">☀️</p>
+    <p class="errorDisplay">City Not Found</p>
+  </div> 
+
+  <script src="index.js"></script>
 </body>
 </html>
